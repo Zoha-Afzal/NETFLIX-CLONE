@@ -1,0 +1,342 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.main {
+    background-image: url("bg.jpg");
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-clip: border-box;
+
+}
+
+.navbar {
+    margin: auto;
+    width: 65vw;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.navbar .logo img {
+    width: 120px;
+    position: relative;
+    z-index: 12;
+
+}
+
+.button {
+    position: relative;
+    z-index: 12;
+    padding: 10px 20px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #a10404;
+}
+
+.box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.55;
+    position: absolute;
+    top: 0;
+    background-color: black;
+
+}
+
+.contant {
+    margin-top: 2em;
+    position: relative;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    color: white;
+    gap: 14px;
+    text-align: center;
+
+}
+
+.small-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    padding: 15px 30px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #a10404;
+}
+
+.input-btn {
+    padding: 15px 30px;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.email {
+    padding: 15px 30px;
+    width: 20vw;
+    background-color: #181818;
+    border: 2px solid gray;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.seprate-box {
+    background-color: #333232;
+    width: 100%;
+    height: 8px;
+}
+
+.Heading {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.Container {
+
+    max-width: 79vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+
+}
+
+.Two {
+    position: relative;
+}
+
+.Two :nth-child(2) {
+    width: auto;
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    left: 81px;
+
+}
+
+.footer {
+    width: 75vw;
+    margin: 1rem auto;
+}
+
+.footer a {
+    color: #918c8c;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer> :first-child {
+    margin: 50px 0px;
+}
+
+.center {
+    margin-top: 13px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.Question {
+
+    width: 65vw;
+    height: 12vh;
+    margin: 10px auto;
+    padding: 0 20px;
+    background-color: #333232;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.Queation .text {
+    margin-left: 10px;
+
+}
+
+.Frequently {
+    margin: 50px 0;
+
+}
+
+.Frequently .Heading {
+    text-align: center;
+}
+
+.end {
+    margin-left: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 965px) {
+    .main {
+        height: 80vh;
+    }
+
+    .box {
+        height: 80vh;
+    }
+
+    .content {
+        margin: 0;
+        padding: 29px;
+    }
+
+    .navbar .logo img {
+        height: 26px;
+    }
+
+    .Heading {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .text {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .small-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .email {
+        width: 60vw;
+    }
+
+    .input-btn {
+        padding: 12px 20px;
+    }
+
+    .Container {
+        flex-direction: column;
+        text-align: center;
+        max-width: 90vw;
+        height: auto;
+        margin: 3rem auto;
+    }
+
+    .center {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .One {
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .email {
+        width: 80vw;
+    }
+
+    .Question .text {
+        font-size: 14px;
+    }
+
+    .Container {
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .navbar {
+        width: auto;
+        justify-content: space-between;
+    }
+
+    .Two :first-child {
+        width: 70%;
+    }
+
+    .Two :nth-child(2) {
+        top: 20%;
+        left: 24%;
+        width: 56%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .button {
+        padding: 6px 12px;
+    }
+
+    .contant {
+        margin-top: 0;
+    }
+
+    .email {
+        width: 90vw;
+    }
+
+    .Container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Heading {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .text {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
